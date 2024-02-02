@@ -11,6 +11,9 @@ body{
     background-color:bisque;
     min-height: 100dvh;
     flex:auto;
+    background-image: url('images/snw.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .header {
@@ -55,13 +58,47 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     height:800px;
     width:500px;
-    background-color: chocolate;
+    border: 3px solid gold;
+    gap:4px;
+    border-radius: 5px;
 }
 
 .calc1, .calc2, .calc3, .calc4, .calc5 {
     display:flex;
+    flex:1;
+    justify-content: space-between;
+    gap:4px;
 
+}
+
+.display {
+    display: flex;
+    flex-grow:3;
+    font-size: 45px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(204, 200, 200);
+    max-width: 375px;
+    font-family: monospace;
+}
+
+.calcDiv, .calcMul, .calcSub, .calcSum, .calcEqu, .calcCle, .calcNum1, .calcNum2, .calcNum3, .calcNum4, .calcNum5, .calcNum6, .calcNum7, .calcNum8, .calcNum9 {
+    font-size: 50px;
+    flex-grow: 1;
+    min-width: 120.5px;
+    max-width: 120.5px;
+    transition: 0.2s;
+}
+
+.calcNum0 {
+    font-size: 50px;
+    flex-grow: 2;
+}
+
+button:hover{
+    background-color: rgb(16, 83, 104);
+    color:white;
 }
