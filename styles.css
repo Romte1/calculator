@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color:bisque;
+    min-height: 100dvh;
+    flex:auto;
+}
+
+.header {
+    display:flex;
+    justify-content: center;
+    padding:16px;
+    background-color: beige;
+    font-family:monospace;
+    font-size: 24px;
+    width: 100%;
+}
+
+.footer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+    background-color: rgb(189, 183, 183);
+    padding:8px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: monospace;
+    color:rgb(53, 44, 139);
+    width:100%
+    
+
+}
+
+.githubIcon {
+    color:black;
+    transition: 0.3s;
+    font-size: 24px;
+    display: flex;
+}
+
+.githubIcon:hover {
+    color:rgb(97, 12, 146);
+    font-size: 24px;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height:800px;
+    width:500px;
+    background-color: chocolate;
+}
+
+.calc1, .calc2, .calc3, .calc4, .calc5 {
+    display:flex;
+
+}
