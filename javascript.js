@@ -25,6 +25,9 @@ calcCle.addEventListener('click', () => {
 })
 
 calcNum0.addEventListener('click', () => {
+    if (display.textContent.length > 11){
+        return
+    }
     if (display.textContent=='+' || display.textContent=='-' || display.textContent=='*' || display.textContent=='/'){
         operator = display.textContent;
         display.textContent = '';
@@ -33,6 +36,9 @@ calcNum0.addEventListener('click', () => {
 })
 
 calcDot.addEventListener('click', () => {
+    if (display.textContent.length > 11){
+        return
+    }
     if (display.textContent=='+' || display.textContent=='-' || display.textContent=='*' || display.textContent=='/'){
         operator = display.textContent;
         display.textContent = '';
@@ -43,6 +49,9 @@ calcDot.addEventListener('click', () => {
 })
 
 calcNum1.addEventListener('click', () => {
+    if (display.textContent.length > 11){
+        return
+    }
     if (display.textContent=='+' || display.textContent=='-' || display.textContent=='*' || display.textContent=='/'){
         operator = display.textContent;
         display.textContent = '';
@@ -51,6 +60,9 @@ calcNum1.addEventListener('click', () => {
 })
 
 calcNum2.addEventListener('click', () => {
+    if (display.textContent.length > 11){
+        return
+    }
     if (display.textContent=='+' || display.textContent=='-' || display.textContent=='*' || display.textContent=='/'){
         operator = display.textContent;
         display.textContent = '';
@@ -59,6 +71,9 @@ calcNum2.addEventListener('click', () => {
 })
 
 calcNum3.addEventListener('click', () => {
+    if (display.textContent.length > 11){
+        return
+    }
     if (display.textContent=='+' || display.textContent=='-' || display.textContent=='*' || display.textContent=='/'){
         operator = display.textContent;
         display.textContent = '';
@@ -67,6 +82,9 @@ calcNum3.addEventListener('click', () => {
 })
 
 calcNum4.addEventListener('click', () => {
+    if (display.textContent.length > 11){
+        return
+    }
     if (display.textContent=='+' || display.textContent=='-' || display.textContent=='*' || display.textContent=='/'){
         operator = display.textContent;
         display.textContent = '';
@@ -75,6 +93,9 @@ calcNum4.addEventListener('click', () => {
 })
 
 calcNum5.addEventListener('click', () => {
+    if (display.textContent.length > 11){
+        return
+    }
     if (display.textContent=='+' || display.textContent=='-' || display.textContent=='*' || display.textContent=='/'){
         operator = display.textContent;
         display.textContent = '';
@@ -83,6 +104,9 @@ calcNum5.addEventListener('click', () => {
 })
 
 calcNum6.addEventListener('click', () => {
+    if (display.textContent.length > 11){
+        return
+    }
     if (display.textContent=='+' || display.textContent=='-' || display.textContent=='*' || display.textContent=='/'){
         operator = display.textContent;
         display.textContent = '';
@@ -91,6 +115,9 @@ calcNum6.addEventListener('click', () => {
 })
 
 calcNum7.addEventListener('click', () => {
+    if (display.textContent.length > 11){
+        return
+    }
     if (display.textContent=='+' || display.textContent=='-' || display.textContent=='*' || display.textContent=='/'){
         operator = display.textContent;
         display.textContent = '';
@@ -99,6 +126,9 @@ calcNum7.addEventListener('click', () => {
 })
 
 calcNum8.addEventListener('click', () => {
+    if (display.textContent.length > 11){
+        return
+    }
     if (display.textContent=='+' || display.textContent=='-' || display.textContent=='*' || display.textContent=='/'){
         operator = display.textContent;
         display.textContent = '';
@@ -107,6 +137,9 @@ calcNum8.addEventListener('click', () => {
 })
 
 calcNum9.addEventListener('click', () => {
+    if (display.textContent.length > 11){
+        return
+    }
     if (display.textContent=='+' || display.textContent=='-' || display.textContent=='*' || display.textContent=='/'){
         operator = display.textContent;
         display.textContent = '';

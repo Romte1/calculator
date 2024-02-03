@@ -93,9 +93,26 @@ body{
     transition: 0.2s;
 }
 
+.calcDiv, .calcMul, .calcSum, .calcSub {
+ background-color: darkseagreen;
+}
+
+.calcEqu {
+ background-color: khaki;
+}
+
 
 
 button:hover{
     background-color: rgb(16, 83, 104);
-    color:white;
+    color:black;
 }
+
+.calcEqu:hover{
+    background-color: rgb(93, 108, 177);
+    color:black;
+}
+
+.calcDiv:hover, .calcMul:hover, .calcSum:hover, .calcSub:hover {
+    background-color: rgb(94, 187, 199);
+   }
