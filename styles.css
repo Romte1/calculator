@@ -85,7 +85,7 @@ body{
     font-family: monospace;
 }
 
-.calcDiv, .calcMul, .calcSub, .calcSum, .calcEqu, .calcCle, .calcNum1, .calcNum2, .calcNum3, .calcNum4, .calcNum5, .calcNum6, .calcNum7, .calcNum8, .calcNum9 {
+.calcDiv, .calcMul, .calcSub, .calcSum, .calcEqu, .calcCle, .calcNum0,.calcDot , .calcNum1, .calcNum2, .calcNum3, .calcNum4, .calcNum5, .calcNum6, .calcNum7, .calcNum8, .calcNum9 {
     font-size: 50px;
     flex-grow: 1;
     min-width: 120.5px;
@@ -93,10 +93,7 @@ body{
     transition: 0.2s;
 }
 
-.calcNum0 {
-    font-size: 50px;
-    flex-grow: 2;
-}
+
 
 button:hover{
     background-color: rgb(16, 83, 104);

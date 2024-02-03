@@ -1,4 +1,4 @@
-var operator, firstNumber = 0, secondNumber = 0;
+var operator = '', firstNumber = 0, secondNumber = 0;
 const display = document.querySelector('.display');
 const calcCle = document.querySelector('.calcCle');
 const calcEqu = document.querySelector('.calcEqu');
@@ -12,6 +12,7 @@ const calcNum6 = document.querySelector('.calcNum6');
 const calcNum7 = document.querySelector('.calcNum7');
 const calcNum8 = document.querySelector('.calcNum8');
 const calcNum9 = document.querySelector('.calcNum9');
+const calcDot = document.querySelector('.calcDot');
 const calcSum = document.querySelector('.calcSum');
 const calcSub = document.querySelector('.calcSub');
 const calcMul = document.querySelector('.calcMul');
@@ -29,6 +30,16 @@ calcNum0.addEventListener('click', () => {
         display.textContent = '';
     }
     display.textContent +='0';
+})
+
+calcDot.addEventListener('click', () => {
+    if (display.textContent=='+' || display.textContent=='-' || display.textContent=='*' || display.textContent=='/'){
+        operator = display.textContent;
+        display.textContent = '';
+    }
+    let onlyOneDotChecker = display.textContent;
+    !onlyOneDotChecker.includes('.') ?
+    display.textContent +='.' : display.textContent +='';
 })
 
 calcNum1.addEventListener('click', () => {
@@ -108,7 +119,6 @@ calcSum.addEventListener('click', () => {
         return
     } else {
         firstNumber += parseFloat(display.textContent);
-        console.log(firstNumber);
         display.textContent ='+';
     }
 })
@@ -118,11 +128,9 @@ calcSub.addEventListener('click', () => {
         return
     } else if (operator == '-') {
         firstNumber -= parseFloat(display.textContent);
-        console.log(firstNumber);
         display.textContent ='-';          
     } else {
     firstNumber += parseFloat(display.textContent);
-    console.log(firstNumber);
     display.textContent ='-';
     } 
 })
@@ -163,7 +171,14 @@ calcEqu.addEventListener('click', () => {
     if (operator === '') {
         return;
     }
-    secondNumber = parseInt(display.textContent);
+    secondNumber = parseFloat(display.textContent);
+    if (operator == '') {
+        return
+    }
+    if (secondNumber == 0 && operator == '/'){
+        display.textContent = "That's Illegal!";
+        return
+    }
     let finalRes = operate(operator, firstNumber, secondNumber);
     finalRes % 1 === 0 ? display.textContent = parseInt(finalRes) : display.textContent = parseFloat(finalRes).toFixed(3);
     operator = '';
