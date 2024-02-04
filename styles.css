@@ -83,14 +83,17 @@ body{
     background-color: rgb(204, 200, 200);
     max-width: 375px;
     font-family: monospace;
+    border-radius: 8px;
 }
 
-.calcDiv, .calcMul, .calcSub, .calcSum, .calcEqu, .calcCle, .calcNum0,.calcDot , .calcNum1, .calcNum2, .calcNum3, .calcNum4, .calcNum5, .calcNum6, .calcNum7, .calcNum8, .calcNum9 {
+button {
     font-size: 50px;
     flex-grow: 1;
     min-width: 120.5px;
     max-width: 120.5px;
     transition: 0.2s;
+    border-radius: 8px;
+    font-family: monospace;
 }
 
 .calcDiv, .calcMul, .calcSum, .calcSub {
